@@ -1,0 +1,69 @@
+// 将设置放入此文件中以覆盖默认值和用户设置。
+{
+    "files.defaultLanguage": "cpp", // ctrl+N新建文件后默认的语言
+    "editor.formatOnType": true,
+    "clang.cflags": [
+        "--target=x86_64-w64-mingw",
+        "-std=c99",
+        "-Wall"
+    ],
+    "clang.cxxflags": [
+        "--target=x86_64-w64-mingw",
+        "-std=c++17",
+        "-Wall"
+    ],
+    "clang.completion.enable": true,
+    "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法交互 
+    "code-runner.executorMap": {
+        "c": "cd $dir && clang $fileName -o $fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=x86_64-w64-mingw -std=c11 && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=x86_64-w64-mingw -std=c++1z && $dir$fileNameWithoutExt"
+    },
+    "code-runner.saveFileBeforeRun": true,
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.default.intelliSenseMode": "clang-x64",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "files.associations": {
+        "unistd.h": "c",
+        "ostream": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "iomanip": "cpp",
+        "algorithm": "cpp",
+        "array": "cpp",
+        "strstream": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "initializer_list": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "optional": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "tuple": "cpp",
+        "typeinfo": "cpp",
+        "utility": "cpp"
+    },
+}
